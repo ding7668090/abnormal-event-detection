@@ -1,6 +1,7 @@
-from utils.array_util import *
-import parameters as params
 import cv2
+
+import parameters as params
+from utils.array_util import *
 
 
 def get_video_clips(video_path):

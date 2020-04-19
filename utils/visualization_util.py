@@ -1,4 +1,5 @@
 import matplotlib
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -59,5 +60,3 @@ def visualize_predictions(video_path, predictions, save_path):
         plt.show()
 
     return
-
-

@@ -1,11 +1,11 @@
 import os
+
 from c3d import *
 from classifier import *
 from utils.visualization_util import *
 
 
 def run_demo():
-
     video_name = os.path.basename(cfg.sample_video_path).split('.')[0]
 
     # read video
@@ -46,7 +46,7 @@ def run_demo():
 
     save_path = os.path.join(cfg.output_folder, video_name + '.gif')
     # visualize predictions
-    print('Executed Successfully - '+video_name + '.gif saved')
+    print('Executed Successfully - ' + video_name + '.gif saved')
     visualize_predictions(cfg.sample_video_path, predictions, save_path)
 
 
