@@ -46,8 +46,8 @@ def run_demo():
 
     save_path = os.path.join(cfg.output_folder, video_name + '.gif')
     # visualize predictions
-    print('Executed Successfully - ' + video_name + '.gif saved')
     visualize_predictions(cfg.sample_video_path, predictions, save_path)
+    print('Executed Successfully - ' + video_name + '.gif saved')
 
 
 if __name__ == '__main__':

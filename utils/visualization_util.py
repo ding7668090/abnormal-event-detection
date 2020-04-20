@@ -1,6 +1,6 @@
 import matplotlib
 
-matplotlib.use('Agg')
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from utils.video_util import *
@@ -55,6 +55,7 @@ def visualize_predictions(video_path, predictions, save_path):
     anim = FuncAnimation(fig, update, frames=np.arange(0, len(frames), 10), interval=1, repeat=False)
 
     if save_path:
+        plt.show()
         anim.save(save_path, dpi=200, writer='imagemagick')
     else:
         plt.show()
